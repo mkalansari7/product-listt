@@ -1,0 +1,25 @@
+{
+  "name": "product-listt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mkalansari7/product-listt.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mkalansari7/product-listt/issues"
+  },
+  "homepage": "https://github.com/mkalansari7/product-listt#readme",
+  "dependencies": {
+    "express": "^4.17.2",
+    "slugify": "^1.6.5"
+  }
+}
