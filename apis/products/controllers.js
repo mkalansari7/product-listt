@@ -1,8 +1,15 @@
 const slugify = require("slugify");
-let products = require("../../data/chProducts");
+const Product = require("../../database/models/Product");
+// let products = require("../../data/chProducts");
 
-exports.fetchProductsController = (req, res) => {
-  res.json(products);
+exports.fetchProductsController = async (req, res) => {
+  try {
+    const products = await Product.find();
+    console.log(products);
+    res.json(products);
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
 };
 
 exports.addProductController = (req, res) => {
